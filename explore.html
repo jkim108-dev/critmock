@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Explore — CRITLOG</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<!-- ======================================================
+     NAVIGATION
+====================================================== -->
+
+<header class="nav">
+
+  <a href="index.html" class="logo">
+    CRITLOG
+  </a>
+
+  <nav>
+    <a href="explore.html">Explore</a>
+    <a href="index.html#how">How it works</a>
+  </nav>
+
+  <div
+    class="nav-right"
+    id="navRight"
+  ></div>
+
+</header>
+
+
+
+<!-- ======================================================
+     EXPLORE
+====================================================== -->
+
+<main class="explore-page">
+
+
+  <!-- ==================================================
+       HEADER
+  ================================================== -->
+
+  <div class="explore-header">
+
+    <p class="eyebrow">
+      COMMUNITY
+    </p>
+
+    <h1>
+      Explore Projects
+    </h1>
+
+    <p>
+      Discover how students use critique
+      to develop their work.
+    </p>
+
+
+
+    <!-- SEARCH -->
+
+    <div class="explore-search">
+
+      <input
+        type="text"
+        id="projectSearch"
+        class="search"
+        placeholder="Search projects, departments, or schools..."
+      >
+
+    </div>
+
+
+
+    <!-- FILTERS -->
+
+    <div class="explore-filters">
+
+
+      <!-- SCHOOL -->
+
+      <div class="filter-group">
+
+        <label for="schoolFilter">
+          School
+        </label>
+
+        <select id="schoolFilter">
+
+          <option value="all">
+            All Schools
+          </option>
+
+          <option value="RISD">
+            Rhode Island School of Design
+          </option>
+
+          <option value="Parsons">
+            Parsons School of Design
+          </option>
+
+          <option value="Pratt">
+            Pratt Institute
+          </option>
+
+          <option value="SAIC">
+            School of the Art Institute of Chicago
+          </option>
+
+          <option value="ArtCenter">
+            ArtCenter College of Design
+          </option>
+
+          <option value="CCA">
+            California College of the Arts
+          </option>
+
+          <option value="MICA">
+            Maryland Institute College of Art
+          </option>
+
+          <option value="CalArts">
+            California Institute of the Arts
+          </option>
+
+          <option value="SVA">
+            School of Visual Arts
+          </option>
+
+          <option value="SCAD">
+            Savannah College of Art and Design
+          </option>
+
+        </select>
+
+      </div>
+
+
+
+      <!-- DEPARTMENT -->
+
+      <div class="filter-group">
+
+        <label for="departmentFilter">
+          Department
+        </label>
+
+        <select id="departmentFilter">
+
+          <option value="all">
+            All Departments
+          </option>
+
+          <option value="Industrial Design">
+            Industrial Design
+          </option>
+
+          <option value="Product Design">
+            Product Design
+          </option>
+
+          <option value="Graphic Design">
+            Graphic Design
+          </option>
+
+          <option value="Architecture">
+            Architecture
+          </option>
+
+          <option value="Furniture Design">
+            Furniture Design
+          </option>
+
+          <option value="Interior Design">
+            Interior Design
+          </option>
+
+          <option value="Fashion Design">
+            Fashion Design
+          </option>
+
+          <option value="Photography">
+            Photography
+          </option>
+
+          <option value="Illustration">
+            Illustration
+          </option>
+
+          <option value="Animation">
+            Animation
+          </option>
+
+          <option value="Painting">
+            Painting
+          </option>
+
+          <option value="Sculpture">
+            Sculpture
+          </option>
+
+          <option value="Transportation Design">
+            Transportation Design
+          </option>
+
+        </select>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+  <!-- ======================================================
+       PROJECT GRID
+  ====================================================== -->
+
+  <div
+    class="explore-project-grid"
+    id="projectGrid"
+  >
+
+
+    <!-- 01 -->
+
+    <a
+      href="project.html"
+      class="project-card explore-project"
+      data-school="RISD"
+      data-department="Industrial Design"
+    >
+
+      <div class="project-image">
+        IMAGE
+      </div>
+
+      <div class="project-info">
+
+        <h3>
+          Modular Chair
+        </h3>
+
+        <p>
+          Industrial Design · RISD
+        </p>
+
+        <div class="project-stats">
+          <span>3 Critiques</span>
+          <span>5 Iterations</span>
+        </div>
+
+      </div>
+
+    </a>
+
+
+
+    <!-- 02 -->
+
+    <a
+      href="project.html"
+      class="project-card explore-project"
+      data-school="Parsons"
+      data-department="Product Design"
+    >
+
+      <div class="project-image">
+        IMAGE
+      </div>
+
+      <div class="project-info">
+
+        <h3>
+          Portable Lighting
+        </h3>
+
+        <p>
+          Product Design · Parsons
+        </p>
+
+        <div class="project-stats">
+          <span>2 Critiques</span>
+          <span>4 Iterations</span>
+        </div>
+
+      </div>
+
+    </a>
+
+
+
+    <!-- 03 -->
+
+    <a
+      href="project.html"
+      class="project-card explore-project"
+      data-school="Pratt"
+      data-department="Architecture"
+    >
+
+      <div class="project-image">
+        IMAGE
+      </div>
+
+      <div class="project-info">
+
+        <h3>
+          Urban Pavilion
+        </h3>
+
+        <p>
+          Architecture · Pratt
+        </p>
+
+        <div class="project-stats">
+          <span>4 Critiques</span>
+          <span>7 Iterations</span>
+        </div>
+
+      </div>
+
+    </a>
+
+
+
+    <!-- 04 -->
+
+    <a
+      href="project.html"
+      class="project-card explore-project"
+      data-school="SVA"
+      data-department="Graphic Design"
+    >
+
+      <div class="project-image">
+        IMAGE
+      </div>
+
+      <div class="project-info">
+
+        <h3>
+          Visual Identity
+        </h3>
+
+        <p>
+          Graphic Design · SVA
+        </p>
+
+        <div class="project-stats">
+          <span>3 Critiques</span>
+          <span>6 Iterations</span>
+        </div>
+
+      </div>
+
+    </a>
+
+
+
+    <!-- 05 -->
+
+    <a
+      href="project.html"
+      class="project-card explore-project"
+      data-school="RISD"
+      data-department="Furniture Design"
+    >
+
+      <div class="project-image">
+        IMAGE
+      </div>
+
+      <div class="project-info">
+
+        <h3>
+          Folding Stool
+        </h3>
+
+        <p>
+          Furniture Design · RISD
+        </p>
+
+        <div class="project-stats">
+          <span>2 Critiques</span>
+          <span>5 Iterations</span>
+        </div>
+
+      </div>
+
+    </a>
+
+
+
+    <!-- 06 -->
+
+    <a
+      href="project.html"
+      class="project-card explore-project"
+      data-school="SAIC"
+      data-department="Painting"
+    >
+
+      <div class="project-image">
+        IMAGE
+      </div>
+
+      <div class="project-info">
+
+        <h3>
+          Memory Landscape
+        </h3>
+
+        <p>
+          Painting · SAIC
+        </p>
+
+        <div class="project-stats">
+          <span>4 Critiques</span>
+          <span>4 Iterations</span>
+        </div>
+
+      </div>
+
+    </a>
+
+
+
+    <!-- 07 -->
+
+    <a
+      href="project.html"
+      class="project-card explore-project"
+      data-school="ArtCenter"
+      data-department="Transportation Design"
+    >
+
+      <div class="project-image">
+        IMAGE
+      </div>
+
+      <div class="project-info">
+
+        <h3>
+          Future Mobility
+        </h3>
+
+        <p>
+          Transportation Design · ArtCenter
+        </p>
+
+        <div class="project-stats">
+          <span>5 Critiques</span>
+          <span>8 Iterations</span>
+        </div>
+
+      </div>
+
+    </a>
+
+
+
+    <!-- 08 -->
+
+    <a
+      href="project.html"
+      class="project-card explore-project"
+      data-school="MICA"
+      data-department="Illustration"
+    >
+
+      <div class="project-image">
+        IMAGE
+      </div>
+
+      <div class="project-info">
+
+        <h3>
+          City Stories
+        </h3>
+
+        <p>
+          Illustration · MICA
+        </p>
+
+        <div class="project-stats">
+          <span>3 Critiques</span>
+          <span>6 Iterations</span>
+        </div>
+
+      </div>
+
+    </a>
+
+
+
+    <!-- 09 -->
+
+    <a
+      href="project.html"
+      class="project-card explore-project"
+      data-school="CalArts"
+      data-department="Animation"
+    >
+
+      <div class="project-image">
+        IMAGE
+      </div>
+
+      <div class="project-info">
+
+        <h3>
+          Motion Study
+        </h3>
+
+        <p>
+          Animation · CalArts
+        </p>
+
+        <div class="project-stats">
+          <span>2 Critiques</span>
+          <span>5 Iterations</span>
+        </div>
+
+      </div>
+
+    </a>
+
+
+
+    <!-- 10 -->
+
+    <a
+      href="project.html"
+      class="project-card explore-project"
+      data-school="CCA"
+      data-department="Industrial Design"
+    >
+
+      <div class="project-image">
+        IMAGE
+      </div>
+
+      <div class="project-info">
+
+        <h3>
+          Coffee System
+        </h3>
+
+        <p>
+          Industrial Design · CCA
+        </p>
+
+        <div class="project-stats">
+          <span>3 Critiques</span>
+          <span>7 Iterations</span>
+        </div>
+
+      </div>
+
+    </a>
+
+
+
+    <!-- 11 -->
+
+    <a
+      href="project.html"
+      class="project-card explore-project"
+      data-school="SCAD"
+      data-department="Interior Design"
+    >
+
+      <div class="project-image">
+        IMAGE
+      </div>
+
+      <div class="project-info">
+
+        <h3>
+          Flexible Workspace
+        </h3>
+
+        <p>
+          Interior Design · SCAD
+        </p>
+
+        <div class="project-stats">
+          <span>4 Critiques</span>
+          <span>6 Iterations</span>
+        </div>
+
+      </div>
+
+    </a>
+
+
+
+    <!-- 12 -->
+
+    <a
+      href="project.html"
+      class="project-card explore-project"
+      data-school="RISD"
+      data-department="Industrial Design"
+    >
+
+      <div class="project-image">
+        IMAGE
+      </div>
+
+      <div class="project-info">
+
+        <h3>
+          Modular Desk Hub
+        </h3>
+
+        <p>
+          Industrial Design · RISD
+        </p>
+
+        <div class="project-stats">
+          <span>3 Critiques</span>
+          <span>6 Iterations</span>
+        </div>
+
+      </div>
+
+    </a>
+
+
+
+    <!-- ==================================================
+         EXTRA PROJECTS
+         View More 누르면 나타남
+    ================================================== -->
+
+
+    <!-- 13 -->
+
+    <a
+      href="project.html"
+      class="project-card explore-project extra-project"
+      data-school="Parsons"
+      data-department="Fashion Design"
+    >
+
+      <div class="project-image">
+        IMAGE
+      </div>
+
+      <div class="project-info">
+
+        <h3>
+          Modular Garment
+        </h3>
+
+        <p>
+          Fashion Design · Parsons
+        </p>
+
+        <div class="project-stats">
+          <span>4 Critiques</span>
+          <span>7 Iterations</span>
+        </div>
+
+      </div>
+
+    </a>
+
+
+
+    <!-- 14 -->
+
+    <a
+      href="project.html"
+      class="project-card explore-project extra-project"
+      data-school="Pratt"
+      data-department="Industrial Design"
+    >
+
+      <div class="project-image">
+        IMAGE
+      </div>
+
+      <div class="project-info">
+
+        <h3>
+          Kitchen Tools
+        </h3>
+
+        <p>
+          Industrial Design · Pratt
+        </p>
+
+        <div class="project-stats">
+          <span>2 Critiques</span>
+          <span>4 Iterations</span>
+        </div>
+
+      </div>
+
+    </a>
+
+
+
+    <!-- 15 -->
+
+    <a
+      href="project.html"
+      class="project-card explore-project extra-project"
+      data-school="SVA"
+      data-department="Photography"
+    >
+
+      <div class="project-image">
+        IMAGE
+      </div>
+
+      <div class="project-info">
+
+        <h3>
+          Night Archive
+        </h3>
+
+        <p>
+          Photography · SVA
+        </p>
+
+        <div class="project-stats">
+          <span>3 Critiques</span>
+          <span>5 Iterations</span>
+        </div>
+
+      </div>
+
+    </a>
+
+
+
+    <!-- 16 -->
+
+    <a
+      href="project.html"
+      class="project-card explore-project extra-project"
+      data-school="RISD"
+      data-department="Sculpture"
+    >
+
+      <div class="project-image">
+        IMAGE
+      </div>
+
+      <div class="project-info">
+
+        <h3>
+          Moving Structure
+        </h3>
+
+        <p>
+          Sculpture · RISD
+        </p>
+
+        <div class="project-stats">
+          <span>4 Critiques</span>
+          <span>8 Iterations</span>
+        </div>
+
+      </div>
+
+    </a>
+
+
+  </div>
+
+
+
+  <!-- ======================================================
+       NO RESULTS
+  ====================================================== -->
+
+  <div
+    class="no-results"
+    id="noResults"
+  >
+
+    <h3>
+      No projects found.
+    </h3>
+
+    <p>
+      Try another school, department,
+      or search term.
+    </p>
+
+  </div>
+
+
+
+  <!-- ======================================================
+       VIEW MORE
+  ====================================================== -->
+
+  <div
+    class="view-more-container"
+    id="viewMoreContainer"
+  >
+
+    <button
+      class="view-more-button"
+      id="viewMoreBtn"
+      type="button"
+    >
+      View More
+    </button>
+
+  </div>
+
+
+</main>
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

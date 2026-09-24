@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    New Critique — CRITLOG
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+</head>
+
+
+<body>
+
+
+<!-- ======================================================
+     NAVIGATION
+====================================================== -->
+
+<header class="nav">
+
+  <a
+    href="index.html"
+    class="logo"
+  >
+    CRITLOG
+  </a>
+
+
+  <nav>
+
+    <a href="explore.html">
+      Explore
+    </a>
+
+    <a href="my-projects.html">
+      My Projects
+    </a>
+
+  </nav>
+
+
+  <div class="nav-right">
+
+    <a href="index.html">
+      Home
+    </a>
+
+    <button
+      class="logout"
+      onclick="logout()"
+    >
+      Log out
+    </button>
+
+  </div>
+
+</header>
+
+
+
+<!-- ======================================================
+     MAIN
+====================================================== -->
+
+<main class="critique-page">
+
+
+  <div class="critique-container">
+
+
+    <!-- HEADER -->
+
+    <p class="eyebrow">
+      NEW CRITIQUE
+    </p>
+
+
+    <h1>
+      Capture your critique.
+    </h1>
+
+
+    <p class="critique-description">
+
+      Focus on the conversation.
+      CRITLOG will help you organize
+      and revisit the feedback later.
+
+    </p>
+
+
+
+    <!-- ==================================================
+         CRITIQUE INFORMATION
+    ================================================== -->
+
+    <div class="critique-settings">
+
+
+      <!-- DEPARTMENT -->
+
+      <div class="form-group">
+
+        <label for="department">
+          Department / Major
+        </label>
+
+
+        <select id="department">
+
+          <option value="" selected disabled>
+            Select your department
+          </option>
+
+
+          <!-- DESIGN -->
+
+          <optgroup label="Design">
+
+            <option>
+              Industrial Design
+            </option>
+
+            <option>
+              Product Design
+            </option>
+
+            <option>
+              Graphic Design
+            </option>
+
+            <option>
+              Communication Design
+            </option>
+
+            <option>
+              Interior Design
+            </option>
+
+            <option>
+              Furniture Design
+            </option>
+
+            <option>
+              Architecture
+            </option>
+
+            <option>
+              Landscape Architecture
+            </option>
+
+            <option>
+              Fashion Design
+            </option>
+
+            <option>
+              Apparel Design
+            </option>
+
+            <option>
+              Textile Design
+            </option>
+
+            <option>
+              Jewelry Design
+            </option>
+
+            <option>
+              Transportation Design
+            </option>
+
+            <option>
+              Interaction Design
+            </option>
+
+            <option>
+              UX / UI Design
+            </option>
+
+            <option>
+              Game Design
+            </option>
+
+            <option>
+              Design Engineering
+            </option>
+
+          </optgroup>
+
+
+
+          <!-- FINE ARTS -->
+
+          <optgroup label="Fine Arts">
+
+            <option>
+              Painting
+            </option>
+
+            <option>
+              Drawing
+            </option>
+
+            <option>
+              Sculpture
+            </option>
+
+            <option>
+              Printmaking
+            </option>
+
+            <option>
+              Ceramics
+            </option>
+
+            <option>
+              Glass
+            </option>
+
+            <option>
+              Photography
+            </option>
+
+            <option>
+              Film
+            </option>
+
+            <option>
+              Video
+            </option>
+
+            <option>
+              Installation Art
+            </option>
+
+            <option>
+              Performance Art
+            </option>
+
+            <option>
+              New Media Art
+            </option>
+
+          </optgroup>
+
+
+
+          <!-- DIGITAL / MEDIA -->
+
+          <optgroup label="Digital & Media">
+
+            <option>
+              Digital Media
+            </option>
+
+            <option>
+              Animation
+            </option>
+
+            <option>
+              Illustration
+            </option>
+
+            <option>
+              Motion Graphics
+            </option>
+
+            <option>
+              Visual Effects
+            </option>
+
+            <option>
+              Interactive Media
+            </option>
+
+            <option>
+              Computational Design
+            </option>
+
+            <option>
+              Creative Computing
+            </option>
+
+            <option>
+              Sound Design
+            </option>
+
+          </optgroup>
+
+
+
+          <!-- CRAFT -->
+
+          <optgroup label="Craft & Materials">
+
+            <option>
+              Textiles
+            </option>
+
+            <option>
+              Fibers
+            </option>
+
+            <option>
+              Jewelry + Metalsmithing
+            </option>
+
+            <option>
+              Ceramics
+            </option>
+
+            <option>
+              Glass
+            </option>
+
+            <option>
+              Woodworking
+            </option>
+
+            <option>
+              Furniture
+            </option>
+
+            <option>
+              Metalworking
+            </option>
+
+          </optgroup>
+
+
+
+          <!-- ARCHITECTURE -->
+
+          <optgroup label="Architecture & Spatial Design">
+
+            <option>
+              Architecture
+            </option>
+
+            <option>
+              Interior Architecture
+            </option>
+
+            <option>
+              Landscape Architecture
+            </option>
+
+            <option>
+              Urban Design
+            </option>
+
+            <option>
+              Spatial Design
+            </option>
+
+            <option>
+              Exhibition Design
+            </option>
+
+            <option>
+              Set Design
+            </option>
+
+          </optgroup>
+
+
+
+          <!-- OTHER -->
+
+          <optgroup label="Other">
+
+            <option>
+              Art Education
+            </option>
+
+            <option>
+              Art History
+            </option>
+
+            <option>
+              Curatorial Studies
+            </option>
+
+            <option>
+              Liberal Arts
+            </option>
+
+            <option>
+              Interdisciplinary Art
+            </option>
+
+            <option>
+              Undeclared
+            </option>
+
+            <option>
+              Other
+            </option>
+
+          </optgroup>
+
+        </select>
+
+      </div>
+
+
+
+      <!-- ==================================================
+           COURSE NAME
+      ================================================== -->
+
+      <div class="form-group">
+
+        <label for="courseName">
+          Course
+        </label>
+
+
+        <input
+          type="text"
+          id="courseName"
+          placeholder="e.g. Design Principles"
+        >
+
+      </div>
+
+
+
+      <!-- ==================================================
+           PROJECT / CRITIQUE TITLE
+      ================================================== -->
+
+      <div class="form-group">
+
+        <label for="critiqueTitle">
+          Critique Title
+        </label>
+
+
+        <input
+          type="text"
+          id="critiqueTitle"
+          placeholder="e.g. Modular Desk System"
+        >
+
+      </div>
+
+
+
+      <!-- ==================================================
+           CRITIQUE TYPE
+      ================================================== -->
+
+      <div class="form-group">
+
+        <label for="critiqueType">
+          Critique Type
+        </label>
+
+
+        <select id="critiqueType">
+
+          <option value="" selected disabled>
+            Select critique type
+          </option>
+
+          <option>
+            Desk Critique
+          </option>
+
+          <option>
+            Group Critique
+          </option>
+
+          <option>
+            Pin-up
+          </option>
+
+          <option>
+            Midterm Critique
+          </option>
+
+          <option>
+            Final Critique
+          </option>
+
+          <option>
+            Peer Critique
+          </option>
+
+          <option>
+            Faculty Review
+          </option>
+
+          <option>
+            Guest Critique
+          </option>
+
+          <option>
+            Informal Feedback
+          </option>
+
+          <option>
+            Other
+          </option>
+
+        </select>
+
+      </div>
+
+
+    </div>
+
+
+
+    <!-- ==================================================
+         RECORDING
+    ================================================== -->
+
+    <div class="record-area">
+
+
+      <div
+        class="record-circle"
+        id="recordCircle"
+      >
+        ●
+      </div>
+
+
+      <h2 id="recordStatus">
+        Ready to record
+      </h2>
+
+
+      <p class="record-description">
+        Start recording when your critique begins.
+      </p>
+
+
+      <p id="timer">
+        00:00
+      </p>
+
+
+      <button
+        class="button-primary"
+        id="recordButton"
+        onclick="startMockRecording()"
+      >
+        Start Recording
+      </button>
+
+
+    </div>
+
+
+  </div>
+
+
+</main>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

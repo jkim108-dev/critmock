@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CRITLOG</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<!-- ======================================================
+     NAVIGATION
+====================================================== -->
+
+<header class="nav">
+
+  <a href="index.html" class="logo">
+    CRITLOG
+  </a>
+
+  <nav>
+    <a href="explore.html">Explore</a>
+    <a href="#how">How it works</a>
+  </nav>
+
+  <!-- JavaScript가 로그인 상태에 따라 내용을 넣음 -->
+  <div class="nav-right" id="navRight"></div>
+
+</header>
+
+
+
+<!-- ======================================================
+     MAIN
+====================================================== -->
+
+<main>
+
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <p class="eyebrow">
+      A PLATFORM FOR BETTER CRITIQUE
+    </p>
+
+    <h1>
+      Critique doesn't<br>
+      end in the room.
+    </h1>
+
+    <p class="hero-description">
+      Capture feedback, revisit your critiques,
+      develop your work, and share the process.
+    </p>
+
+
+    <div class="hero-buttons">
+
+      <a
+        href="#"
+        id="startCritiqueBtn"
+        class="button-primary"
+      >
+        Start a Critique
+      </a>
+
+      <a
+        href="explore.html"
+        class="button-secondary"
+      >
+        Explore Projects
+      </a>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ======================================================
+       PROJECTS
+  ====================================================== -->
+
+  <section class="projects-section">
+
+    <div class="section-heading">
+
+      <div>
+
+        <p class="eyebrow">
+          COMMUNITY
+        </p>
+
+        <h2>
+          Explore Projects
+        </h2>
+
+      </div>
+
+      <a href="explore.html">
+        View all →
+      </a>
+
+    </div>
+
+
+    <div class="project-grid">
+
+
+      <!-- PROJECT 1 -->
+
+      <a
+        href="project.html"
+        class="project-card"
+      >
+
+        <div class="project-image">
+          <span>IMAGE</span>
+        </div>
+
+        <div class="project-info">
+
+          <h3>
+            Modular Chair
+          </h3>
+
+          <p>
+            Industrial Design
+          </p>
+
+          <div class="project-stats">
+
+            <span>
+              3 Critiques
+            </span>
+
+            <span>
+              5 Iterations
+            </span>
+
+          </div>
+
+        </div>
+
+      </a>
+
+
+
+      <!-- PROJECT 2 -->
+
+      <a
+        href="project.html"
+        class="project-card"
+      >
+
+        <div class="project-image">
+          <span>IMAGE</span>
+        </div>
+
+        <div class="project-info">
+
+          <h3>
+            Lighting System
+          </h3>
+
+          <p>
+            Product Design
+          </p>
+
+          <div class="project-stats">
+
+            <span>
+              2 Critiques
+            </span>
+
+            <span>
+              4 Iterations
+            </span>
+
+          </div>
+
+        </div>
+
+      </a>
+
+
+
+      <!-- PROJECT 3 -->
+
+      <a
+        href="project.html"
+        class="project-card"
+      >
+
+        <div class="project-image">
+          <span>IMAGE</span>
+        </div>
+
+        <div class="project-info">
+
+          <h3>
+            Coffee Maker
+          </h3>
+
+          <p>
+            Industrial Design
+          </p>
+
+          <div class="project-stats">
+
+            <span>
+              4 Critiques
+            </span>
+
+            <span>
+              6 Iterations
+            </span>
+
+          </div>
+
+        </div>
+
+      </a>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ======================================================
+       HOW IT WORKS
+  ====================================================== -->
+
+  <section
+    class="how-section"
+    id="how"
+  >
+
+    <p class="eyebrow">
+      HOW IT WORKS
+    </p>
+
+    <h2>
+      Turn feedback into progress.
+    </h2>
+
+
+    <div class="steps">
+
+
+      <div class="step">
+
+        <span>
+          01
+        </span>
+
+        <h3>
+          Capture
+        </h3>
+
+        <p>
+          Record your critique without worrying
+          about taking notes during your presentation.
+        </p>
+
+      </div>
+
+
+
+      <div class="step">
+
+        <span>
+          02
+        </span>
+
+        <h3>
+          Summarize
+        </h3>
+
+        <p>
+          Turn critique conversations into organized
+          feedback, suggestions, questions, and action items.
+        </p>
+
+      </div>
+
+
+
+      <div class="step">
+
+        <span>
+          03
+        </span>
+
+        <h3>
+          Develop
+        </h3>
+
+        <p>
+          Connect feedback to new iterations
+          and see how your project develops over time.
+        </p>
+
+      </div>
+
+
+
+      <div class="step">
+
+        <span>
+          04
+        </span>
+
+        <h3>
+          Share
+        </h3>
+
+        <p>
+          Share your critique history and development
+          process so others can learn from your work.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+</main>
+
+
+
+<!-- ======================================================
+     FOOTER
+====================================================== -->
+
+<footer>
+
+  <div class="logo">
+    CRITLOG
+  </div>
+
+  <p>
+    Critique → Development
+  </p>
+
+</footer>
+
+
+
+<!-- ======================================================
+     LOGIN MODAL
+====================================================== -->
+
+<div
+  class="modal-overlay"
+  id="loginModal"
+>
+
+  <div class="login-modal">
+
+
+    <!-- CLOSE BUTTON -->
+
+    <button
+      class="modal-close"
+      id="closeLoginModal"
+      type="button"
+    >
+      ×
+    </button>
+
+
+
+    <p class="eyebrow">
+      WELCOME BACK
+    </p>
+
+
+    <h2>
+      Log in to CRITLOG
+    </h2>
+
+
+    <p class="modal-description">
+      Capture feedback and continue developing your work.
+    </p>
+
+
+
+    <!-- LOGIN FORM -->
+
+    <form id="loginForm">
+
+
+      <!-- EMAIL -->
+
+      <label for="email">
+        Email
+      </label>
+
+      <input
+        type="text"
+        id="email"
+        placeholder="you@example.com"
+        autocomplete="email"
+        required
+      >
+
+
+
+      <!-- PASSWORD -->
+
+      <label for="password">
+        Password
+      </label>
+
+      <input
+        type="password"
+        id="password"
+        placeholder="Password"
+        autocomplete="current-password"
+        required
+      >
+
+
+
+      <!-- LOGIN BUTTON -->
+
+      <button
+        type="submit"
+        class="button-primary modal-login-button"
+      >
+        Log in
+      </button>
+
+
+    </form>
+
+
+
+    <p class="signup-text">
+
+      Don't have an account?
+
+      <a href="#">
+        Sign up
+      </a>
+
+    </p>
+
+
+  </div>
+
+</div>
+
+
+
+<!-- ======================================================
+     JAVASCRIPT
+====================================================== -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
